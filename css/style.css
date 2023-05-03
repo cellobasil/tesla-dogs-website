@@ -1,0 +1,1527 @@
+*html {
+    box-sizing: content-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* * {
+    outline: 1px solid red;
+    } */
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 1500px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(/img/background_stars2.png) repeat center;
+    background-size: contain;
+    background-color: black;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* стили для текста */
+
+/* font-family: 'Caudex', serif; */
+.text-h1 {
+    font-family: 'Caudex', serif;
+    font-size: 113.33px;
+    color: white;
+}
+.text-h2 {
+    font-family: 'Besley', serif;
+    font-size: 170px;
+    color: white;
+}
+.text-h2-title {
+    font-family: 'Besley', serif;
+    font-size: 39.15px;
+    text-transform: uppercase;
+    color: white;
+}
+.text-h3 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 300;
+    font-size: 28.47px;
+    color: #D7D7D7;
+    line-height: 50px;
+}
+.text-h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 21.35px;
+    color: white;
+    opacity: 70%;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    margin: auto;
+    width: 1153.07px;
+    height: 71.18px;
+    position: relative;
+    background: rgb(61,61,61,);
+    background: linear-gradient(90deg, rgba(61,61,61,.3) 0%, rgba(61,61,61,.3) 100%);
+    border-radius: 0px 0px 20px 20px;
+
+}
+/* верхнее меню */
+.navigation {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 645px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+.twitter-desktop {
+    width: 42.71px;
+    height: 42.71px;
+}
+.telegram-desktop {
+    width: 42.71px;
+    height: 42.71px;
+}
+.twitter-mobile {
+    display: none;
+}
+.telegram-mobile {
+    display: none;
+}
+.button-header:hover {
+    color: white;
+    opacity: 1;
+    transition: opacity 0.1s linear;
+}
+.top-info {
+    position: relative;
+}
+.top-info-flex {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    align-items: center;
+    z-index: 2;
+}
+.top-text {
+    margin-top: 2px;
+    text-align: center;
+    width: 891.33px;
+}
+.marketplace-button, .marketplace-button-chapter {
+    font-size: 14.24px;
+    text-decoration: none;
+    background: linear-gradient(0deg, rgb(89, 0, 199) 0%, rgba(131,62,241) 100%);
+    padding: 12.4px 19.5px;
+    border-radius: 11px;
+    opacity: 1;
+    transition: 1s
+}
+.marketplace-button:hover {
+    box-shadow: 0px 0px 50px rgb(110, 14, 188);
+    transition: box-shadow 0.3s linear;
+}
+.marketplace-button-chapter:hover {
+    box-shadow: 0px 0px 50px rgb(110, 14, 188);
+    transition: box-shadow 0.3s linear;
+}
+.marketplace-button-div, .marketplace-button-div-chapters {
+    margin-top: 39px;
+}
+.dogs {
+    width: 291.83px;
+    height: 72.96px;
+    margin-top: 120px;
+}
+.container-mars {
+    overflow: hidden;
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 550px;
+    z-index: 1;
+}
+.container-mars .mars {
+    width: 2000px;
+    margin-right: 10px;
+}
+
+/* chapters */
+.chapters {
+    position: relative;
+    top: 158px;
+}
+.chapters a:hover {
+    box-shadow: 0px 0px 70px rgb(110, 14, 188);
+    transition: box-shadow 0.5s linear;
+}
+.container-chapters {
+    width: 1120px;
+    position: relative;
+    left: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.top-info-flex-chapter {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 77px;
+    align-items: center;
+    z-index: 2;
+}
+.title-chapter {
+    text-align: center;
+    width: 780px;
+    line-height: 123px;
+    font-weight: 700;
+}
+.top-text-chapter {
+    margin-top: 32px;
+    text-align: center;
+    width: 890px;
+}
+
+.chapter-card {
+    width: 343.49px;
+    height: 526px;
+    background: white;
+    border-radius: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 0;
+}
+.chapter-card-img {
+    width: 320px;
+    height: 399px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-top: 10px;
+
+}
+.chapter-card-img img {
+    height: 399px;
+    vertical-align: middle;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.chapter-card-number {
+    font-family: 'Caudex', serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    position: absolute;
+    width: 320px;
+    top: 10px;
+    opacity: 50%;
+    background-color: #fff;
+    height: 20px;
+
+}
+.chapter-card-title {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 8px;
+    text-align: start;
+    width: 320px;
+}
+.card-characters {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    color: #8C8C8C;
+    margin-top: 8px;
+    width: 320px;
+}
+.chapter-card-button {
+    width: 343.49px;
+    height: 526px;
+}
+
+
+
+
+/* карусель с коллекцией */
+.gallery {
+    position: relative;
+    max-width: auto;
+    z-index: 3;
+}
+.collection-background {
+    position: relative;
+    top: 140px;
+    width: 1280px;
+    height: 800.74px;
+}
+.nft-collection {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 447px;
+    top: 195px;
+    color: black;
+}
+.collection-ref {
+    font-size: 35.59px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 569.42px;
+    height: 128px;
+    left: 370px;
+    top: 789px;
+    color: black;
+    text-align: center;
+}
+.collection-ref:hover {
+    color: rgb(115, 21, 0);
+    transition: color 0.3s linear;
+}
+
+/* карусель */
+
+
+.wrapper{
+  display: none;
+  max-width: auto;
+  position: absolute;
+  top: 280px;
+}
+.wrapper i{
+  top: 560px;
+  width: 74.74px;
+  height: 74.74px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i img {
+    position: relative;
+    top: 22px;
+}
+.arrow-button-left {
+    rotate: 180deg;
+    position: relative;
+    left: 3px;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: 385px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: 420px;
+}
+#left {
+    left: 220px;
+}
+#right {
+    right: 220px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 500px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+
+/* карусель 2 */
+.itcss__items {
+    counter-reset: slide;
+  }
+
+  .itcss__item {
+    counter-increment: slide;
+  }
+
+  .itcss__item>div::before {
+    content: counter(slide);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  /* стили для корневого элемента слайдера */
+  .carousel-new {
+    width: 1280px;
+    overflow-y: hidden;
+    position: absolute;
+    height: 600px;
+    top: 280px;
+  }
+.itcss {
+    position: relative;
+    max-width: 1280px;
+    height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* стили для wrapper */
+  .itcss__wrapper {
+    max-width: 1280px;
+    position: relative;
+    background-color: #eee;
+    overflow: hidden;
+  }
+
+  /* стили для элемента, в котором непосредственно расположены элементы (слайды) */
+  .itcss__items {
+    display: flex;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: transform 1s ease;
+    will-change: transform;
+  }
+
+  /* стили для элементов */
+  .itcss__item {
+    position: relative;
+    flex: 0 0 100%;
+    max-width: 100%;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform;
+    height: 500px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .itcss__item img {
+    height: 500px;
+  }
+
+  /* кнопки Prev и Next */
+  .itcss__btn {
+    position: absolute;
+    top: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 63px;
+    color: #fff;
+    border-radius: 50%;
+    background: black;
+    border: none;
+    outline: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.5;
+    user-select: none;
+    filter: invert();
+  }
+
+  .itcss__btn_hide {
+    display: none;
+  }
+
+  .itcss__btn:hover,
+  .itcss__btn:focus {
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    opacity: 0.7;
+  }
+
+  .itcss__btn_prev {
+    left: 0;
+    padding-right: 9px;
+  }
+
+  .itcss__btn_next {
+    right: 0;
+    padding-left: 9px;
+  }
+
+  .itcss__btn::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .itcss__btn_prev::before {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+  }
+
+  .itcss__btn_next::before {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+
+  /* Индикаторы */
+  .itcss__indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 15%;
+    padding-left: 0;
+    list-style: none;
+    user-select: none;
+  }
+
+  .itcss__indicator {
+    flex: 0 1 auto;
+    width: 30px;
+    height: 2px;
+    margin-right: 3px;
+    margin-left: 3px;
+    background-color: rgb(255 255 255 / 50%);
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    cursor: pointer;
+  }
+
+  .itcss__indicator_active {
+    background-color: #fff;
+  }
+
+  /* класс для отключения transition */
+  .transition-none {
+    transition: none;
+  }
+
+
+/* карта */
+.map-container {
+    position: absolute;
+    width: 1280px;
+    height: 1023.61px;
+    left: auto;
+    top: 1513px;
+    overflow: hidden;
+    z-index: 2;
+
+}
+.map {
+    height: 900px;
+    position: absolute;
+    left: -220px;
+}
+
+/* about us */
+.about-us {
+
+    width: 810px;
+    text-align: center;
+    position: relative;
+    top: 1081px;
+    left: 229px;
+    z-index: 3;
+}
+
+.marketplace {
+    position: relative;
+    top: 1140px;
+}
+.market {
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+.mptxt1 {
+    width: 291px;
+    height: 446px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    position: relative;
+    left: 120px;
+    top: 146px;
+}
+.mptxt2 {
+    position: relative;
+    left: 510px;
+    top: 245px;
+    width: 670px;
+    margin: 0 0;
+    text-align: center;
+}
+.laptop {
+    position: absolute;
+    left: 418px;
+    height: 574px;
+    top: 116px;
+}
+.iphone {
+    position: absolute;
+    top: 550px;
+    left: 122px;
+}
+
+/* how to buy toncoin */
+.how-to-buy-toncoin {
+    position: absolute;
+    top: 4030px;
+    max-width: 1280px;
+    height: auto;
+}
+.how-to-buy-cont {
+    max-width: 1280px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.how-to-buy {
+    position: relative;
+    left: 370px;
+    width: 567px;
+}
+.htbtxt1 {
+    width: 370px;
+    position: absolute;
+    left: 455px;
+    top: 160px;
+    text-align: center;
+}
+.htbtxt2 {
+    width: 370px;
+    position: absolute;
+    left: 455px;
+    top: 736px;
+    text-align: center;
+}
+.phones {
+    max-width: 1280px;
+    height: auto;
+}
+#phone1 {
+    position: absolute;
+    left: 178px;
+    top: 138px;
+    width: 230.67px;
+}
+#phone2 {
+    position: absolute;
+    left: 872px;
+    top: 138px;
+    width: 230.67px;
+}
+#phone3 {
+    position: absolute;
+    left: 178px;
+    top: 720px;
+    width: 230.67px;
+}
+#phone4 {
+    position: absolute;
+    top: 720px;
+    left: 872px;
+    width: 230.67px;
+}
+
+/*other places*/
+.other-places {
+    position: relative;
+    top: 2720px;
+}
+.other-places-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tonkeeper-link {
+    text-decoration: underline;
+}
+
+.available {
+    margin-bottom: 20px;
+}
+.stores {
+    width: 660px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.google-play {
+    width: 275px;
+}
+.appstore {
+    width: 243px;
+}
+#download-tonkeeper {
+    width: 1206.45px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.exchanges {
+    padding-left: 50px;
+}
+.okx {
+    width: 145px;
+}
+.huobi {
+    padding-left: 45px;
+    width: 304px;
+}
+.bybit {
+    margin-bottom: 18px;
+    width: 232px;
+}
+/* contacts */
+.contacts {
+    position: absolute;
+    top: 5790px;
+    left: 427px;
+}
+.contacts-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.contact-us {
+    text-align: center;
+    font-size: 40px;
+}
+.telegram-contact {
+    width: 200px;
+    padding: 10px 50px;
+    color: white;
+    background-color: #28A8E9;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 480px) {
+    /* * {
+        outline: 1px solid red;
+        } */
+    * html {
+        box-sizing: border-box;
+    }
+    body {
+        width: 375px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        background: url(/img/background_stars_mobile.jpg) repeat-y;
+        background-size: contain;
+        background-color: black;
+    }
+    .container {
+        width: 375px;
+    }
+    .header {
+        width: 375px;
+    }
+    .header {
+        display: none;
+    }
+    .navigation {
+        display: none;
+    }
+
+
+        /* font-family: 'Caudex', serif; */
+    .text-h1 {
+        font-family: 'Caudex', serif;
+        font-size: 55.57px;
+        color: white;
+    }
+    .text-h2 {
+        font-family: 'Besley', serif;
+        font-size: 170px;
+        color: white;
+    }
+    .text-h2-title {
+        font-family: 'Besley', serif;
+        font-size: 23.44px;
+        text-transform: uppercase;
+        color: white;
+    }
+    .text-h3 {
+        font-family: 'EB Garamond', serif;
+        font-weight: 300;
+        font-size: 20.55px;
+        color: #D7D7D7;
+        line-height: 30px;
+    }
+    .text-h4 {
+        font-family: 'Lato', sans-serif;
+        font-size: 32px;
+        color: white;
+        opacity: 70%;
+        font-weight: 400;
+    }
+
+    .tgtw-buttons-mobile {
+        width: 86.79px;
+        height: 37.57px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 29px;
+        margin-top: 20px;
+    }
+    .twitter-mobile {
+        display: block;
+        height: 37.5px;
+        width: 37.5px;
+    }
+    .telegram-mobile {
+        display: block;
+        height: 37.5px;
+        width: 37.5px;
+    }
+    .container-mars {
+        width: 375px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 310px;
+        z-index: 1;
+    }
+    .container-mars .mars {
+        width: 1485.94px;
+        margin-right: 25px;
+    }
+    .top-info {
+        position: relative;
+        top: 23px;
+        width: 325.78px;
+
+    }
+    .top-info-flex {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        z-index: 2;
+    }
+    .top-text {
+        margin-top: 20px;
+        text-align: center;
+        width: 310px;
+    }
+    .marketplace-button {
+        font-size: 21px;
+        text-decoration: none;
+        background: linear-gradient(0deg, rgb(89, 0, 199) 0%, rgba(131,62,241) 100%);
+        padding: 18px 29px;
+        border-radius: 11px;
+        opacity: 1;
+        transition: 1s
+    }
+    .marketplace-button:hover {
+        box-shadow: 0px 0px 50px rgb(110, 14, 188);
+        transition: box-shadow 0.3s linear;
+    }
+    .marketplace-button-div {
+        margin-top: 71px;
+        display: none;
+    }
+    .dogs {
+        width: 224.72px;
+        height: 55.08px;
+        margin-top: 32px;
+    }
+
+        /* карусель с коллекцией */
+    .gallery {
+        position: absolute;
+        z-index: 3;
+        top: 92px;
+    }
+    .collection-background {
+        position: relative;
+        top: 412px;
+        width: 375px;
+        height: 430.08px;
+    }
+    .nft-collection {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        color: black;
+        margin-top: 7px;
+        left: auto;
+        top: 0;
+    }
+    .collection-ref {
+        position: relative;
+        top: 265px;
+        display: flex;
+        justify-content: center;
+        font-size: 15.23px;
+        width: 242.03px;
+        left: 72px;
+        height: 128px;
+        margin-top: 15px;
+        color: black;
+        text-decoration: underline;
+    }
+    .collection-ref:hover {
+        color: rgb(115, 21, 0);
+        transition: color 0.3s linear;
+    }
+    /* карусель */
+    .wrapper{
+        display: none;
+        max-width: auto;
+        position: relative;
+        top: 0px;
+        margin-top: 7px;
+    }
+    .wrapper i{
+        top: 0px;
+        left: 0px;
+        width: 74.74px;
+        height: 74.74px;
+        color: #343F4F;
+        cursor: pointer;
+        font-size: 1.15rem;
+        position: absolute;
+        text-align: center;
+        line-height: 44px;
+        background: #fff;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+    }
+    #left {
+        position: absolute;
+        left: 20px;
+        top: 293px;
+        height: 35px;
+        width: 35px;
+    }
+    #right {
+        position: absolute;
+        top: 293px;
+        left: 330px;
+        height: 35px;
+        width: 35px;
+    }
+    .wrapper i img {
+        position: relative;
+        top: 0px;
+    }
+    .arrow-button-left {
+        rotate: 180deg;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 15px;
+        bottom: 0px;
+        padding-top: 2px;
+    }
+    .arrow-button-right {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 15px;
+        bottom: 0px;
+        padding-bottom: 2px;
+    }
+    .wrapper i:active{
+        transform: translateY(-50%) scale(0.9);
+    }
+    .wrapper i:hover{
+        background: #f2f2f2;
+    }
+    .wrapper i:first-child{
+        left: 385px;
+        display: none;
+    }
+    .wrapper i:last-child{
+        right: 420px;
+    }
+    .wrapper .carousel{
+        font-size: 0px;
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+    }
+    .carousel.dragging{
+        cursor: grab;
+        scroll-behavior: auto;
+    }
+    .carousel.dragging img{
+        pointer-events: none;
+    }
+    .carousel img{
+        height: 258.98px;
+        object-fit: cover;
+        user-select: none;
+        margin-left: 14px;
+        width: calc(100% / 1);
+    }
+    .carousel img:first-child{
+        margin-left: 0px;
+    }
+        /* карусель 2 */
+    .itcss__items {
+        counter-reset: slide;
+    }
+
+    .itcss__item {
+        counter-increment: slide;
+    }
+
+    .itcss__item>div::before {
+        content: counter(slide);
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: #fff;
+        font-style: italic;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    /* стили для корневого элемента слайдера */
+    .carousel-new {
+        width: 375px;
+        overflow-y: hidden;
+        position: absolute;
+        height: 258.977px;
+        top: 488px;
+    }
+    .itcss {
+        position: relative;
+        max-width: 800px;
+        height: 258.977px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* стили для wrapper */
+    .itcss__wrapper {
+        max-width: 800px;
+        position: relative;
+        background-color: #eee;
+    }
+
+    /* стили для элемента, в котором непосредственно расположены элементы (слайды) */
+    .itcss__items {
+        display: flex;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        transition: transform 1s ease;
+        will-change: transform;
+    }
+
+    /* стили для элементов */
+    .itcss__item {
+        position: relative;
+        flex: 0 0 100%;
+        max-width: 100%;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        will-change: transform;
+        height: 258.977px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .itcss__item img {
+        height: 258.977px;
+    }
+
+    /* кнопки Prev и Next */
+    .itcss__btn {
+        position: absolute;
+        top: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 63px;
+        color: #fff;
+        border-radius: 50%;
+        background: black;
+        border: none;
+        outline: none;
+        transform: translateY(-50%);
+        cursor: pointer;
+        opacity: 0.5;
+        user-select: none;
+        filter: invert();
+    }
+
+    .itcss__btn_hide {
+        display: none;
+    }
+
+    .itcss__btn:hover,
+    .itcss__btn:focus {
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        opacity: 0.7;
+    }
+
+    .itcss__btn_prev {
+        left: 0;
+        padding-right: 9px;
+    }
+
+    .itcss__btn_next {
+        right: 0;
+        padding-left: 9px;
+    }
+
+    .itcss__btn::before {
+        content: "";
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        background: transparent no-repeat center center;
+        background-size: 100% 100%;
+    }
+
+    .itcss__btn_prev::before {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+    }
+
+    .itcss__btn_next::before {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+
+    /* Индикаторы */
+    .itcss__indicators {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0 15%;
+        padding-left: 0;
+        list-style: none;
+        user-select: none;
+    }
+
+    .itcss__indicator {
+        flex: 0 1 auto;
+        width: 30px;
+        height: 2px;
+        margin-right: 3px;
+        margin-left: 3px;
+        background-color: rgb(255 255 255 / 50%);
+        background-clip: padding-box;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        cursor: pointer;
+    }
+
+    .itcss__indicator_active {
+        background-color: #fff;
+    }
+
+    /* класс для отключения transition */
+    .transition-none {
+        transition: none;
+    }
+    /* about us */
+    .about-us {
+        position: relative;
+        top: 400px;
+        width: auto;
+        z-index: 2;
+        left: auto;
+    }
+    .text-about {
+        margin-top: 15px;
+        width: 325px;
+        left: 27px;
+        display: block;
+        width: 325px;
+        text-align: center;
+        position: relative;
+
+    }
+    /* map moboile */
+    .map-container {
+        position: relative;
+        width: 375px;
+        height: 267px;
+        left: 0px;
+        top: 909px;
+        overflow: hidden;
+    }
+    .map {
+        height: 267px;
+        position: relative;
+        right: 94px;
+        margin-right: 30px;
+        left: auto;
+    }
+    /* marketplace mobile */
+    .marketplace {
+        position: relative;
+        top: 739px;
+    }
+    .market {
+        display: flex;
+        justify-content: center;
+        color: white;
+        position: relative;
+    }
+    .mptxt1 {
+        width: 317px;
+        height: auto;
+        margin-top: 15px;
+        text-align: center;
+        position: relative;
+        left: 32px;
+        top: 0px;
+    }
+    .iphone {
+        position: absolute;
+        width: 276.56px;
+        top: 210px;
+        left: 48px;
+    }
+    .mptxt2 {
+        position: relative;
+        left: 30px;
+        top: 614px;
+        width: 319px;
+        height: 370px;
+        margin: 0 0;
+        text-align: center;
+    }
+    .laptop {
+        display: none;
+    }
+
+    /* how to buy toncoin */
+    .how-to-buy-toncoin {
+        position: relative;
+        top: 1380px;
+
+    }
+    .how-to-buy-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .how-to-buy {
+        position: relative;
+        width: 181px;
+        height: 70px;
+        text-align: center;
+        left: 96px;
+        display: flex;
+        justify-content: center;
+    }
+    .htbtxt1 {
+        width: 310px;
+        height: auto;
+        position: relative;
+        left: 33px;
+        top: 0px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .phones {
+        position: absolute;
+        top: 300px;
+    }
+    #phone1 {
+        position: absolute;
+        left: 33px;
+        top: 60px;
+        width: 168.75px;
+        z-index: 1;
+    }
+    #phone2 {
+        position: absolute;
+        left: 152px;
+        top: 39px;
+        width: 192.19px;
+        z-index: 2;
+    }
+    .htbtxt2 {
+        width: 320px;
+        height: auto;
+        position: relative;
+        left: 33px;
+        top: 460px;
+        text-align: center;
+    }
+
+    #phone3 {
+        position: absolute;
+        left: 33px;
+        width: 168.75px;
+        top: 744px;
+        z-index: 1;
+    }
+    #phone4 {
+        position: absolute;
+        left: 152px;
+        width: 192.19px;
+        top: 721px;
+        z-index: 2;
+    }
+
+    /*other places*/
+    .other-places {
+        position: relative;
+        top: 2330px;
+        margin-left: 0;
+    }
+    .other-places-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tonkeeper-link {
+        text-decoration: underline;
+    }
+    .available {
+        margin-bottom: 20px;
+    }
+    .stores {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        width: 200px;
+    }
+    .google-play {
+        width: 200px;
+    }
+    .appstore {
+        margin-top: 10px;
+        width: 200px;
+    }
+    #download-tonkeeper {
+        width: 317px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .exchanges {
+        padding-left: 0px;
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .okx {
+        width: 111px;
+    }
+    .huobi {
+        padding-left: 0px;
+
+        width: 274.35px;
+        margin-top: 15px;
+    }
+    .bybit {
+        height: 52px;
+        margin-bottom: 0px;
+        margin-top: 15px;
+    }
+    /* contacts */
+    .contacts {
+        position: absolute;
+        top: 5000px;
+        left: auto;
+    }
+    .contacts-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .contact-us {
+        text-align: center;
+        margin-top: 20px;
+        line-height: 35px;
+
+    }
+    .telegram-contact {
+        width: 194px;
+        padding: 7px 48px;
+        color: white;
+        background-color: #28A8E9;
+        border-radius: 10px;
+        opacity: 1;
+        font-size: 20px;
+    }
+        /* chapters */
+    .chapters {
+        position: relative;
+        top: 58px;
+    }
+    .chapters a:hover {
+        box-shadow: 0px 0px 70px rgb(110, 14, 188);
+        transition: box-shadow 0.5s linear;
+    }
+    .container-chapters {
+        width: 375px;
+        position: relative;
+        height: auto;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .top-info-flex-chapter {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 0px;
+        align-items: center;
+        z-index: 2;
+    }
+    .title-chapter {
+        text-align: center;
+        width: 320px;
+        line-height: 59px;
+        font-weight: 700;
+        font-size: 45px;
+        font-family: 'Caudex';
+    }
+    .top-text-chapter {
+        margin-top: 17px;
+        text-align: center;
+        width: 320px;
+    }
+    .marketplace-button-chapter {
+        font-size: 14.24px;
+        text-decoration: none;
+        background: linear-gradient(0deg, rgb(89, 0, 199) 0%, rgba(131,62,241) 100%);
+        padding: 12.4px 19.5px;
+        border-radius: 11px;
+        opacity: 1;
+        transition: 1s;
+        display: block;
+    }
+    .marketplace-button-div-chapters {
+        display: block;
+        margin-top: 28px;
+    }
+
+    .chapter-card {
+        width: 315px;
+        height: 485px;
+        background: white;
+        border-radius: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .chapter-card-img {
+        width: 295.06px;
+        height: 368.09px;
+        overflow: hidden;
+        border-radius: 12px;
+        margin-top: 10px;
+
+    }
+    .chapter-card-img img {
+        height: 368.09px;
+        vertical-align: middle;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .chapter-card-number {
+        font-family: 'Caudex', serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        color: black;
+        position: relative;
+        width: 295.06px;
+        opacity: 50%;
+        background-color: #fff;
+        height: 20px;
+
+    }
+    .chapter-card-title {
+        font-family: 'Epilogue', sans-serif;
+        font-size: 22.1293px;
+        font-weight: 700;
+        margin-top: 8px;
+        text-align: start;
+        width: 295.055px;;
+    }
+    .card-characters {
+        font-family: 'Epilogue', sans-serif;
+        font-weight: 400;
+        font-size: 12.9087px;
+        color: #8C8C8C;
+        margin-top: 8px;
+        width: 295.055px;
+    }
+    .chapter-card-button {
+        width: 343.49px;
+        height: 526px;
+    }
+
+
+    }
